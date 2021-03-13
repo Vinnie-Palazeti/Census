@@ -1,0 +1,31 @@
+Put variables in pkl file?
+
+Create package with functions
+
+So retrieve is an example, it should pull the function from Censusdata.ACS.file import ...
+
+Use that function to return the data bing bang boom
+
+I need to identify all of the variables I think are important
+
+Total population,
+Skews & averages should be in paid version
+Race Demographics
+Black, white, hispanic, asian, etc
+Sex demographics
+Age
+Skews young, old, etc
+
+Social economic
+Median income
+Poverty
+
+I want aggregate tables, so everything, say, within 25 miles of the gps coordinate input
+
+County by county data is only necessary for mapping the counties, which would be cool to do 
+For visualizations
+
+
+I think breaking it down by Race - Age is too much
+
+Really just want age break down, not race by age
