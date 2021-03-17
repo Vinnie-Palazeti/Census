@@ -3,32 +3,18 @@ import requests
 import pandas
 import argparse
 import pandas as pd
+from CensusData.ACS.fns import get_data
+from CensusData.ACS.utils import var_dict 
+
 
 
 
 def main(year, source, name, variables, state, county):
 
-	dyear = year
-	dsource = source
-	dname = name
-	variables += ['NAME']
-	cols = variables
-	state_name = state
-	county_name = county
-
-	base_url = f'https://api.census.gov/data/{dyear}/{dsource}/{dname}/'
-
-	data_url = f'{base_url}?get={",".join(cols)}&for=county:{county_name}&in=state:{state_name}'
-
-	response = requests.get(data_url)
-
-	data = pd.DataFrame(columns=response.json()[0], data=response.json()[1:])
-	
-	return print(data)
-
-
+    return print(get_data(year,source,name,variables,state,county))
 
 if __name__ == "__main__":
+    variable_codes = list(var_dict.values())
     parser = argparse.ArgumentParser()
     parser.add_argument(
     	"--year",
@@ -41,7 +27,7 @@ if __name__ == "__main__":
     	default='acs5')
     parser.add_argument(
     	"--variables",
-        default=['B00001_001E'] )
+        default=variable_codes)
     parser.add_argument(
     	"--state",
     	default='55')

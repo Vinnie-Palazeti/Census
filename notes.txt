@@ -26,6 +26,11 @@ County by county data is only necessary for mapping the counties, which would be
 For visualizations
 
 
-I think breaking it down by Race - Age is too much
+### Goal is to get a function working with ACS
 
-Really just want age break down, not race by age
+Really all I need to do is provide a list of items to variable, and should be good to go
+
+
+Can only call 50 vars at a time. Really need a solution to this AGE thing. -- since it has to be treated differently, I.e. it has to be summed, maybe put it in a different function. Call main get_data() then merge it with get_age() then shoot it into db
+Or just put it in a different call.
+C
