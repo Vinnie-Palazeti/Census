@@ -1,10 +1,6 @@
-Put variables in pkl file?
 
-Create package with functions
 
-So retrieve is an example, it should pull the function from Censusdata.ACS.file import ...
 
-Use that function to return the data bing bang boom
 
 I need to identify all of the variables I think are important
 
@@ -26,11 +22,13 @@ County by county data is only necessary for mapping the counties, which would be
 For visualizations
 
 
-### Goal is to get a function working with ACS
-
-Really all I need to do is provide a list of items to variable, and should be good to go
-
-
 Can only call 50 vars at a time. Really need a solution to this AGE thing. -- since it has to be treated differently, I.e. it has to be summed, maybe put it in a different function. Call main get_data() then merge it with get_age() then shoot it into db
 Or just put it in a different call.
-C
+
+
+I need the ability to find a gps location. I would rather not rely on other peoples APIS because what if it breaks
+
+Might be better if I pull the shape files,
+But then I have to do a join with the entire table, which might be slow
+
+I should start a notebook so I don't have to keep all this in my head
