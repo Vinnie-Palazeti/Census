@@ -32,3 +32,6 @@ Might be better if I pull the shape files,
 But then I have to do a join with the entire table, which might be slow
 
 I should start a notebook so I don't have to keep all this in my head
+
+
+I think I could simplify this by first doing it on the states, then doing it on the state selected (it might not be slow)
