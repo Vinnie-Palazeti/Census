@@ -1,4 +1,8 @@
+I should write a bash .sh file to rip all this shit
 
+No need for python & requests
+
+That sounds fun
 
 
 
