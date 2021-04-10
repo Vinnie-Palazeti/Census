@@ -5,6 +5,9 @@ No need for python & requests
 That sounds fun
 
 
+Need to make sure what I am reading in. That when I download the files & get them into sql I have what I need when I pull them back out
+
+
 
 I need to identify all of the variables I think are important
 
