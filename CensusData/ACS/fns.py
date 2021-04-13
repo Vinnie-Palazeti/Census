@@ -2,8 +2,6 @@
 import requests
 import pandas as pd
 
-
-
 def get_data(year, source, name, variables, state, county):
 
 	dyear = year
