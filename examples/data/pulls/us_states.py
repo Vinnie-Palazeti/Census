@@ -31,7 +31,7 @@ def main():
 
 	state = state[['NAME','GEOID','STUSPS','geometry']]
 
-	with open(os.path.abspath(os.getcwd()).replace('data_pulls','data') + '/us_states.pkl','wb') as file:
+	with open(os.path.abspath(os.getcwd()).replace('pulls','storage') + '/us_states.pkl','wb') as file:
 	    pickle.dump(state,file)
 
 	try:

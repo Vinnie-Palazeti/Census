@@ -6,7 +6,7 @@ Just store it on a private github for now
 
 **** Have a base version, just need a loop for the state codes & need to clean up/standardize storage
 
-Just put it all in the db folder (even tho no db hah)
+Just put it all in the db folder 
 
 
 

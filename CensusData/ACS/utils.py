@@ -2,14 +2,14 @@ var_dict = {
     'Total Population' : "B01003_001E",
     "White Population" : "B02001_002E",
     "Black Population" : 'B02001_003E',
-    "Hispanic or Latino": "B03003_003E",
-    #"Arab Population": 'B04004_006E',
-    "American Indiana & Alaska Native": 'B02001_004E',
+    "Hispanic or Latino Population": "B03003_003E",
+    "Arab Population": 'B04004_006E',
+    "American Indiana & Alaska Native Population": 'B02001_004E',
     "Asian Population" : 'B02001_005E',
-    "Hawaiian & Pacific Islander": "B02001_006E",
+    "Hawaiian & Pacific Islander Population": "B02001_006E",
 
-    'Male Population' : 'B01001_002E',
-    "Female Population" : 'B01001_026E',
+    'Male Pop' : 'B01001_002E',
+    "Female Pop" : 'B01001_026E',
 
     'Male Pop 0-5':'B01001_003E',
     'Male Pop 5-9':'B01001_004E',
@@ -58,6 +58,13 @@ var_dict = {
     'Female Pop 75-79':'B01001_047E',
     'Female Pop 80-84':'B01001_048E',
     'Female Pop 85+':'B01001_049E',
+
+    'Income Below Poverty Line': 'B17001_002E',
+    'Median Income': 'B19013_001E',
+    'Education Attainment 18 to 64 Total': 'B23006_001E',
+    'Education Attainment Less than Highschool':'B23006_002E',
+    'Education Attainment Highschool Graduate': 'B23006_009E',
+    'Education Attainment Bachelors Degree or Higher': 'B23006_023E',
 }
  
 
@@ -71,17 +78,25 @@ state_codes = ['54', '12', '17', '27', '24', '44', '16', '33', '37', '50', '09',
 
 
 
-
-var_structured = {
+vars_struct = {
     'Total Population' : "B01003_001E",
     'Population - Race': {
         "White Population" : "B02001_002E",
         "Black Population" : 'B02001_003E',
-        "Hispanic or Latino": "B03003_003E",
-        #"Arab Population": 'B04004_006E',
-        "American Indiana & Alaska Native": 'B02001_004E',
+        "Hispanic or Latino Population": "B03003_003E",
+        "Arab Population": 'B04004_006E',
+        "American Indian & Alaska Native Population": 'B02001_004E',
         "Asian Population" : 'B02001_005E',
-        "Hawaiian & Pacific Islander": "B02001_006E"
+        "Hawaiian & Pacific Islander Population": "B02001_006E"
+    },
+    'Economic':{
+        'Income Total Population': 'B17001_001E',
+        'Income Below Poverty Line': 'B17001_002E',
+        'Median Income': 'B19013_001E',
+        'Education Attainment 18 to 64 Total': 'B23006_001E',
+        'Education Attainment Less than Highschool':'B23006_002E',
+        'Education Attainment Highschool Graduate': 'B23006_009E',
+        'Education Attainment Bachelors Degree or Higher': 'B23006_023E',
     },
     'Population - Sex': {
         'Male Population' : 'B01001_002E',
