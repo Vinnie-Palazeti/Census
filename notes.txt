@@ -1,3 +1,35 @@
+**** Updated Updated Plan *****
+
+Now that I have a layout of the land, seems like an easy procedure
+
+procedure:
+
+1.) Coordinate Input
+2.) sjoin with country to find state, then sjoin with state to find county
+3.) create shape with point, return all census tracts within that shape
+4.) query database for tract data
+
+At this point you have the tract data & the shape of the tracts. You need to turn the pandas frame into a geojson.
+
+Here you can use leaflet or folium, which is a python wrapper
+
+The geojson shapes are overlaid on the map
+
+
+
+
+GOALS:
+
+Finish & refine steps 1 - 4
+Not only pull the data but document the steps & make it reproducible
+Also figure out the point to shape to join issue you had originally
+
+
+
+
+
+
+
 *** Updated plan ***
 
 See if you can save / pickle the geopnadas file & put it up on GitHub
