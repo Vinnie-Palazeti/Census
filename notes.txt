@@ -1,4 +1,23 @@
+
+
+
+
+
+Get Node working with leaflet
+Transfer GEO Json to leaflet thing
+
+Figureout how that would work wit Ghost
+
+
+
+
+
+
+
+
+
 **** Updated Updated Plan *****
+
 
 Now that I have a layout of the land, seems like an easy procedure
 
