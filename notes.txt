@@ -2,6 +2,28 @@
 
 
 
+*** 5/30 ***
+
+
+Currently have leaflet working
+
+Can create geojson with python & use that in html + leaflet to create plot
+
+Need to figure out how to format leaflet hover over stuff. I want there to be one big boarder of the  entire area, then the hover will show the census tract
+
+When hover overing over a census tract only some of the stats will appear, need to choose which
+	And need to format with control
+
+Need interactive plots for below maps. Thats where the majority of the information will be shown
+
+All variables displayed, Comparison to US as a whole, Google Trends, 
+	Should this be done in python or in JS?
+
+
+************
+
+
+
 
 Get Node working with leaflet
 Transfer GEO Json to leaflet thing
