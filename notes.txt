@@ -2,6 +2,105 @@
 
 
 
+6/20
+
+Maybe finally giving in to database
+Downloaded Postgres & postgis extension
+
+Command: psql -U vinniepalazeti django_proj
+To get into db
+
+
+Current state of world folder
+I can get leaflet working in Django & have a Postgres database setup with sql
+Goal is to have this run as a local instance on lightsail/ec2
+
+Django app reads database based on input to url, like an api
+
+Need to understand how input forms work, so I can query database with input
+
+Also need to return random number via button
+
+To Do:
+
+Caught error on step 3 of medium series, psycopg2 needs to be downloaded version less than 2.9, was catching an error due to outdated Xcode apparently. Need to pip install psycopg2 and make sure I can complete the last step of that walk through
+
+
+Next, try to upload one of your shapefiles to sql. Create new table & append .shp file
+May be easier to insert from pandas, the csv files you already have.
+
+That's the next big step, your data in postgres
+
+
+
+
+6/19
+notes:
+Struggled mightily with sqlite3 today
+The tutorials I was following used the Django sqlite database to store the gps data
+They used spatialite mod extension to enable this
+Issue is loading extensions is difficult
+Needed to run sqlite3 c API to get it to work, downing Xcode now
+
+Though, I do not believe I need to follow this directly
+I think I can use the s3 bucket system, which is basically identical to what I have now
+It is a GitHub clone thing
+
+Django uses sqlite3 for it's storage, I bet I will need this when doing payment processing, so
+Need to understand & use it appropriately
+But I think I can get away with using s3 for my shapes & geojson creation
+
+Just need to figure out how to link the two
+
+Maybe start with a free tier s3 bucket with only a single possible call (low data requirement)
+
+
+Basically I think I will be able to copy tutorials which are reading image data or some sort to Django, but instead I will be reading the geojson files
+
+
+
+6/12
+Need to decide on charts:
+
+Bar Chart
+Pie Chart
+Stacked flow chart of percent population
+	X axis: Age category 
+	Y axis: 0-100%
+	Fill: Sex
+Won't be too interesting, only two categories that stick hard @ 50/50
+
+Need to visualize race, education, income, & age
+
+Also Google Search Trends
+
+Then need to make comparisons to the state & country average
+
+
+Maybe I can do comparative graphs 
+
+
+
+Looked into web hosting w Flask & Google Cloud
+Other options available too
+
+Need to do mapping basics. Get format of main map done w/ hover tools
+
+And make the first few charts
+
+Need to think about overall html format with ccs, keep it simple
+
+
+Need to plot the dissolved one, then add the tracts as features
+
+checklist:
+- got max/min zoom & max bounds functional, along with setView & the zoom parameter
+- set map to top of page
+- got colors to a good place
+
+
+
+
 *** 5/30 ***
 
 
